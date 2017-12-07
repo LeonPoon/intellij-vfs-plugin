@@ -2,7 +2,7 @@ package com.codepowered.intellij.plugin.vfsplugin;
 
 import org.jetbrains.annotations.NotNull;
 
-public class MyRootVF extends MyVFDirectory {
+class MyRootVF extends MyVFDirectory {
 
     private final MyVFS fileSystem;
 

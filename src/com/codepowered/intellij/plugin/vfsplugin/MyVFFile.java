@@ -9,7 +9,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 
-public class MyVFFile extends AbstractMyVF {
+class MyVFFile extends AbstractMyVF {
 
     MyVFFile(MyVFDirectory parent, String name) {
         super(parent, name);
@@ -32,7 +32,7 @@ public class MyVFFile extends AbstractMyVF {
         return new byte[0];
     }
 
-    public AbstractMyVF resolve(String path) {
+    AbstractMyVF resolve(String path) {
 
         if ("".equals(path))
             return this;

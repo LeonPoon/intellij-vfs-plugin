@@ -10,7 +10,7 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.util.concurrent.atomic.AtomicReference;
 
-public class MyVFDirectory extends AbstractMyVF {
+class MyVFDirectory extends AbstractMyVF {
 
     private final AtomicReference<NewVirtualFile[]> children = new AtomicReference<>();
 
@@ -64,7 +64,7 @@ public class MyVFDirectory extends AbstractMyVF {
         return null;
     }
 
-    public AbstractMyVF resolve(String path) {
+    AbstractMyVF resolve(String path) {
 
         if ("".equals(path))
             return this;

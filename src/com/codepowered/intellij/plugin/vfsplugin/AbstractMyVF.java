@@ -44,7 +44,7 @@ public abstract class AbstractMyVF extends NewVirtualFile implements VirtualFile
         return name;
     }
 
-    public abstract AbstractMyVF resolve(String path);
+    abstract AbstractMyVF resolve(String path);
 
     @NotNull
     public MyVFS getFileSystem() {
